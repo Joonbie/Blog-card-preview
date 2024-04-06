@@ -1,0 +1,163 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --bg-yellow: hsl(47, 88%, 63%);
+  --bg-white: hsl(0, 0%, 100%);
+  --fnt-light-grey: hsl(0, 0%, 50%);
+  --fnt-black: hsl(0, 0%, 7%);
+}
+
+html {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+}
+
+/* Centering of project card */
+
+body {
+  background-color: var(--bg-yellow);
+  height: 100vh;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Start of project card styling */
+
+.card {
+  background-color: var(--bg-white);
+  width: 19rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem var(--fnt-black);
+}
+
+.card-img img {
+  width: 100%;
+}
+
+/* styling of learning button */
+.learning {
+  background-color: var(--bg-yellow);
+  max-width: 5rem;
+  padding: 0.4rem 0.6rem;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+}
+
+.learning p {
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* styling of publish text */
+.publish {
+  margin-bottom: 1rem;
+}
+
+.publish h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Styling of the main header */
+.main-header {
+  margin-bottom: 1rem;
+}
+
+.main-header p {
+  font-weight: 800;
+  font-size: 1.6rem;
+  color: var(--fnt-black);
+}
+
+.main-header a {
+  text-decoration: none;
+}
+
+/* Adding hover effect to the main header */
+.main-header p:hover,
+.main-header p:focus {
+  color: var(--bg-yellow);
+}
+
+/* Styling of description */
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.description p {
+  color: var(--fnt-light-grey);
+  font-size: 1.1rem;
+}
+
+/* Styling of author */
+
+.author {
+  display: inline-flex;
+  align-items: center;
+}
+
+.author img {
+  width: 20%;
+  margin-right: 0.6rem;
+}
+
+.author p {
+  font-size: 0.1rem;
+}
+
+/* End of project card styling */
+
+/* mobile view */
+/* breakpoint at 375px */
+@media only screen and (max-width: 24rem) {
+  .card {
+    width: 80%;
+    box-shadow: 0.5rem 0.5rem var(--fnt-black);
+  }
+
+  .learning p {
+    font-size: 0.9rem;
+  }
+
+  .publish h3 {
+    font-size: 0.8rem;
+  }
+
+  .main-header p {
+    font-size: 1.3rem;
+  }
+
+  .description p {
+    font-size: 0.85rem;
+  }
+
+  .author h4 {
+    font-size: 0.85rem;
+  }
+}
+
+/* Start of footer */
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* End of footer */
